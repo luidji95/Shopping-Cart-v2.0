@@ -137,3 +137,72 @@ body {
 .product-item{
     margin-right: 50%;
 }
+.subtotal-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shipping-class{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-styling{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: auto;
+    height: auto;
+}
+.item-list img{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+.item-list{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    justify-content: start;
+}
+.addToCart {
+    background-color: #4CAF50; /* Zeleno pozadinsko boja */
+    color: white; /* Bela boja teksta */
+    padding: 10px 20px; /* Unutrašnji razmak */
+    border: none; /* Uklanjanje ivice */
+    border-radius: 5px; /* Zaobljeni uglovi */
+    cursor: pointer; /* Ikonica kursora */
+    font-size: 16px; /* Veličina fonta */
+    transition: background-color 0.3s, transform 0.3s; /* Glatki prelaz */
+}
+
+.addToChart:hover {
+    background-color: #45a049; /* Tamnija zelena na hover */
+    transform: scale(1.05); /* Blago povećanje dugmeta */
+}
+
+.addToChart:active {
+    background-color: #397d3b; /* Još tamnija zelena na klik */
+    transform: scale(0.95); /* Blago smanjenje dugmeta */
+}
+.product input[type="number"] {
+    width: 60px;
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.product input[type="number"]:focus {
+    outline: none;
+    border-color: #4CAF50;
+}
+.picshop{
+    cursor: pointer;
+}
+.order-list{
+    display: flex;
+    flex-direction: column;
+}
