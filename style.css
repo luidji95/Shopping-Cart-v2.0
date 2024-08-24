@@ -206,3 +206,24 @@ body {
     display: flex;
     flex-direction: column;
 }
+.order-item{
+    border-bottom: 1px solid grey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.backtocart{
+    color:green;
+    cursor: pointer;
+}
+.delete{
+    background-color: #d83838; /* Zeleno pozadinsko boja */
+    color: white; /* Bela boja teksta */
+    padding: 10px 20px; /* Unutrašnji razmak */
+    border: none; /* Uklanjanje ivice */
+    border-radius: 5px; /* Zaobljeni uglovi */
+    cursor: pointer; /* Ikonica kursora */
+    font-size: 16px; /* Veličina fonta */
+    transition: background-color 0.3s, transform 0.3s; /* Glatki prelaz */
+}
+
