@@ -176,3 +176,29 @@ class OrderedListManager {
         console.log(totalElement);
     }
 }
+
+const productManager = new ProductManager();
+const orderedListManager = new OrderedListManager();
+
+productsData.forEach((product) => {
+    const newProduct = new Product(product.name, product.price, product.inStock, product.photoUrl);
+    productManager.addProduct(newProduct);
+});
+
+productManager.renderAllProducts();
+
+function updateCartNotification() {
+    const totalItems = orderedListManager.orderedList.reduce((total, item) => total + item.quantity, 0);
+    numberOrder.textContent = totalItems;
+}
+
+const cartImage = document.querySelector('.picshop');
+cartImage.addEventListener('click', function () {
+    contentContainer.style.display = 'none';
+    cartContainer.style.display = 'block';
+});
+
+back.addEventListener('click', function () {
+    contentContainer.style.display = 'block';
+    cartContainer.style.display = 'none';
+});
